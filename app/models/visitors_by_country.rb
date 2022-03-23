@@ -1,0 +1,3 @@
+class VisitorsByCountry < ApplicationRecord
+
+end

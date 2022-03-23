@@ -1,0 +1,28 @@
+<h1 style=" text-align: center;">Visitors By Country ISO</h1>
+<table>
+  <style>
+      table, th, td {
+          border: 1px solid;
+          border-collapse: collapse;
+          font-size: 18px;
+          text-align: center;
+          margin: 0 auto;
+      }
+  </style>
+
+  <thead>
+  <tr>
+    <th>Country ISO</th>
+    <th>Visitors</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @country_statistics.each do |country| %>
+    <tr>
+      <td><%= country.country_iso %></td>
+      <td><%= country.visitors %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
